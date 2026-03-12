@@ -11,8 +11,8 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
-
+  build-linux:
+    name: Build & Test (Linux)
     runs-on: ubuntu-latest
 
     steps:
@@ -25,12 +25,31 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    - name: Test (net8.0, net9.0, net10.0)
+      run: dotnet test --no-build --verbosity normal --framework net8.0 && dotnet test --no-build --verbosity normal --framework net9.0 && dotnet test --no-build --verbosity normal --framework net10.0
+
+  build-windows:
+    name: Build & Test (Windows — net462, net481)
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v6
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: 10.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test (net462)
+      run: dotnet test --no-build --verbosity normal --framework net462
+    - name: Test (net481)
+      run: dotnet test --no-build --verbosity normal --framework net481
 
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: build
+    needs: [ build-linux, build-windows ]
     runs-on: ubuntu-latest
     permissions:
       id-token: write  # required for OIDC trusted publishing
