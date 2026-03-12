@@ -71,5 +71,3 @@ jobs:
         user: kirill-systola
     - name: Push package
       run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
-    - name: Push symbols
-      run: dotnet nuget push ./artifacts/*.snupkg --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
