@@ -1,7 +1,7 @@
 # net-dns
 
 [![Build](https://github.com/kirillkovalenko/net-dns/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kirillkovalenko/net-dns/actions/workflows/dotnet.yml) 
-[![Version](https://img.shields.io/nuget/v/Makaretu.Dns.Signed.svg)](https://www.nuget.org/packages/Makaretu.Dns.Signed)
+[![Version](https://img.shields.io/nuget/v/Systola.Makaretu.Dns.svg)](https://www.nuget.org/packages/Systola.Makaretu.Dns)
 [![docs](https://cdn.rawgit.com/kirillkovalenko/net-dns/master/doc/images/docs-latest-green.svg)](https://kirillkovalenko.github.io/net-dns/articles/intro.html)
 
 DNS data model with serializer/deserializer for the wire and "master file" format.
@@ -36,9 +36,9 @@ DNS data model with serializer/deserializer for the wire and "master file" forma
 
 ## Getting started
 
-Published releases are available on [NuGet](https://www.nuget.org/packages/Makaretu.Dns.Signed/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
+Published releases are available on [NuGet](https://www.nuget.org/packages/Systola.Makaretu.Dns/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
 
-    PM> Install-Package Makaretu.Dns.Signed
+    PM> Install-Package Systola.Makaretu.Dns
     
 ## Usage
 

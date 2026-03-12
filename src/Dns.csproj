@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net8.0; net9.0; net10.0; netstandard2.0; net462; net481</TargetFrameworks>
-    <AssemblyName>Makaretu.Dns</AssemblyName>
+    <AssemblyName>Systola.Makaretu.Dns</AssemblyName>
     <RootNamespace>Makaretu.Dns</RootNamespace>
     <DebugType>portable</DebugType>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -11,11 +11,11 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Makaretu.Dns.snk</AssemblyOriginatorKeyFile>
 
-    <AssemblyVersion>3.1.4</AssemblyVersion>
-    <Version>3.1.4</Version>
+    <AssemblyVersion>2026.3.12</AssemblyVersion>
+    <Version>2026.3.12</Version>
     
     <!-- Nuget specs -->
-    <PackageId>Makaretu.Dns.Signed</PackageId>
+    <PackageId>Systola.Makaretu.Dns</PackageId>
     <Authors>Richard Schneider</Authors>
     <Title>DNS Object Model</Title>
     <Description>DNS data model with serializer/deserializer for the wire and master file format.</Description>
