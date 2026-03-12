@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0; net9.0; netstandard2.0; net462; net481</TargetFrameworks>
+    <TargetFrameworks>net8.0; net9.0; net10.0; netstandard2.0; net462; net481</TargetFrameworks>
     <AssemblyName>Makaretu.Dns</AssemblyName>
     <RootNamespace>Makaretu.Dns</RootNamespace>
     <DebugType>portable</DebugType>
@@ -44,6 +44,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Release|net9.0'">
+    <IsTrimmable>True</IsTrimmable>
+    <IsAotCompatible>True</IsAotCompatible>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Release|net10.0'">
     <IsTrimmable>True</IsTrimmable>
     <IsAotCompatible>True</IsAotCompatible>
   </PropertyGroup>
