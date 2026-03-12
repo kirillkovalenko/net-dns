@@ -15,18 +15,18 @@
     <Version>3.1.2</Version>
     
     <!-- Nuget specs -->
-    <PackageId>Makaretu.Dns.New</PackageId>
+    <PackageId>Makaretu.Dns.Signed</PackageId>
     <Authors>Richard Schneider</Authors>
     <Title>DNS Object Model</Title>
     <Description>DNS data model with serializer/deserializer for the wire and master file format.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>https://github.com/jdomnitz/net-dns/releases</PackageReleaseNotes>
-    <Copyright>© 2018-2019 Richard Schneider, 2023+ additions jdomnitz</Copyright>
+    <PackageReleaseNotes>https://github.com/kirillkovalenko/net-dns/releases</PackageReleaseNotes>
+    <Copyright>© 2018-2019 Richard Schneider, 2023+; additions by jdomnitz, Kirill Kovalenko</Copyright>
     <PackageTags>dns</PackageTags>
     <IncludeSymbols>True</IncludeSymbols>
-    <PackageProjectUrl>https://github.com/jdomnitz/net-dns</PackageProjectUrl>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/kirillkovalenko/net-dns</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -50,7 +50,7 @@
 	
   <ItemGroup>
     <EmbeddedResource Include="Resolving/RootHints" />
-	<None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

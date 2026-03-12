@@ -1,8 +1,8 @@
 # net-dns
 
-[![Build](https://github.com/jdomnitz/net-dns/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jdomnitz/net-dns/actions/workflows/dotnet.yml) 
-[![Version](https://img.shields.io/nuget/v/Makaretu.Dns.New.svg)](https://www.nuget.org/packages/Makaretu.Dns.New)
-[![docs](https://cdn.rawgit.com/jdomnitz/net-dns/master/doc/images/docs-latest-green.svg)](https://richardschneider.github.io/net-dns/articles/intro.html)
+[![Build](https://github.com/kirillkovalenko/net-dns/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kirillkovalenko/net-dns/actions/workflows/dotnet.yml) 
+[![Version](https://img.shields.io/nuget/v/Makaretu.Dns.Signed.svg)](https://www.nuget.org/packages/Makaretu.Dns.Signed)
+[![docs](https://cdn.rawgit.com/kirillkovalenko/net-dns/master/doc/images/docs-latest-green.svg)](https://kirillkovalenko.github.io/net-dns/articles/intro.html)
 
 DNS data model with serializer/deserializer for the wire and "master file" format.
 
@@ -36,9 +36,9 @@ DNS data model with serializer/deserializer for the wire and "master file" forma
 
 ## Getting started
 
-Published releases are available on [NuGet](https://www.nuget.org/packages/Makaretu.Dns.New/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
+Published releases are available on [NuGet](https://www.nuget.org/packages/Makaretu.Dns.Signed/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
 
-    PM> Install-Package Makaretu.Dns.New
+    PM> Install-Package Makaretu.Dns.Signed
     
 ## Usage
 
@@ -99,11 +99,11 @@ msg.AdditionalRecords.Add(new ARecord
 
 # Related projects
 
-- [net-mdns](https://github.com/jdomnitz/net-mdns) - client and server for multicast DNS
+- [net-mdns](https://github.com/kirillkovalenko/net-mdns) - client and server for multicast DNS
 - [net-udns](https://github.com/richardschneider/net-udns) - client for unicast DNS, DNS over HTTPS (DOH) and DNS over TLS (DOT)
 - [DNSSEC](https://www.icann.org/resources/pages/dnssec-qaa-2014-01-29-en) -  What Is It and Why Is It Important?
  
 # License
 Copyright © 2018 Richard Schneider (makaretu@gmail.com)
 
-The package is licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php "Read more about the MIT license form") license. Refer to the [LICENSE](https://github.com/richardschneider/net-dns/blob/master/LICENSE) file for more information.
+The package is licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php "Read more about the MIT license form") license. Refer to the [LICENSE](https://github.com/kirillkovalenko/net-dns/blob/master/LICENSE) file for more information.
