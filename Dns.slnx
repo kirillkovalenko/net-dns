@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path=".travis.yml" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="doc\Documentation.csproj" />
+  <Project Path="src\Dns.csproj" />
+  <Project Path="test\DnsTests.csproj" />
+</Solution>
