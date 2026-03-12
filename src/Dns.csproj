@@ -11,8 +11,8 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Makaretu.Dns.snk</AssemblyOriginatorKeyFile>
 
-    <AssemblyVersion>3.1.2</AssemblyVersion>
-    <Version>3.1.2</Version>
+    <AssemblyVersion>3.1.4</AssemblyVersion>
+    <Version>3.1.4</Version>
     
     <!-- Nuget specs -->
     <PackageId>Makaretu.Dns.Signed</PackageId>
